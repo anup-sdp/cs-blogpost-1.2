@@ -1,8 +1,8 @@
 # corey schafer playlist https://www.youtube.com/playlist?list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI
-part 1-4 are in cs blogpost,
+part 1-4 are in cs blogpost, in this project part 5+6
 # part 5, https://www.youtube.com/watch?v=NvOV3ig2tGY&list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI&index=5 (Adding a sqlite Database - SQLAlchemy Models and Relationships)
 # part 6, https://www.youtube.com/watch?v=VyoGAoxQhxM&list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI&index=7 (Completing CRUD - Update and Delete - PUT, PATCH, DELETE)
-
+# part 7, https://www.youtube.com/watch?v=2JPDt-Jp6fM&list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI&index=8 (Sync vs Async - Converting Your App to Asynchronous)
 
 cmd:
 python -m venv myenv
@@ -19,5 +19,8 @@ uvicorn main4:app --reload
 git:
 git init
 git add .
-git commit -m "add_part5,6"
+git commit -m "add_part_5&6"
 git branch -M main
+git remote add origin https://github.com/anup-sdp/cs-blogpost-1.2.git
+git push -u origin main
+=====
