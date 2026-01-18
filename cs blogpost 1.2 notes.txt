@@ -1,0 +1,23 @@
+# corey schafer playlist https://www.youtube.com/playlist?list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI
+part 1-4 are in cs blogpost,
+# part 5, https://www.youtube.com/watch?v=NvOV3ig2tGY&list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI&index=5 (Adding a sqlite Database - SQLAlchemy Models and Relationships)
+# part 6, https://www.youtube.com/watch?v=VyoGAoxQhxM&list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI&index=7 (Completing CRUD - Update and Delete - PUT, PATCH, DELETE)
+
+
+cmd:
+python -m venv myenv
+myenv\Scripts\activate
+pip install "fastapi[standard]" sqlalchemy
+pip freeze > requirements.txt 
+
+code .
+write files
+fastapi dev main.py
+uvicorn main4:app --reload
+
+=====
+git:
+git init
+git add .
+git commit -m "add_part5,6"
+git branch -M main
