@@ -31,7 +31,8 @@ templates = Jinja2Templates(directory="templates")
 @app.get("/posts", include_in_schema=False, name="posts")
 def home(request: Request, db: Annotated[Session, Depends(get_db)]): # dependency injection
     result = db.execute(select(models.Post))
-    posts = result.scalars().all()
+    # ^ lazy loading: post.author # to avoid n+1, use selectinload or joinedload
+    posts = result.scalars().all() 
     return templates.TemplateResponse(
         request,
         "home.html",
@@ -350,7 +351,3 @@ def validation_exception_handler(request: Request, exception: RequestValidationE
 # myenv\Scripts\activate
 # fastapi dev main.py
 # uvicorn main:app --reload
-
-
-
-# at 16:04 part 6.
